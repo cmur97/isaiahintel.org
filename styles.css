@@ -485,3 +485,152 @@ p {
   padding-bottom: 16px;
   margin-bottom: 32px;
 }
+
+@media (max-width: 850px) {
+  /* Navigation */
+
+  .nav-inner {
+    flex-direction: column;
+    padding: 12px 18px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    margin-right: 0;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 7px 9px;
+    border-radius: 8px;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    padding: 7px 9px;
+  }
+
+  /* General layout */
+
+  .container,
+  .hero-inner {
+    width: 100%;
+  }
+
+  .section {
+    padding: 50px 18px;
+  }
+
+  .section-sm {
+    padding: 42px 18px;
+  }
+
+  /* Hero */
+
+  .hero {
+    width: calc(100% - 24px);
+    padding: 60px 22px;
+    border-radius: 32px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .button-row {
+    align-items: stretch;
+  }
+
+  .button-row .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Page headings */
+
+  .container h1 {
+    font-size: clamp(2.4rem, 12vw, 4rem);
+    line-height: 1.05;
+  }
+
+  .container h2 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.12;
+  }
+
+  /* Images */
+
+  .container img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  /* Cards and grids */
+
+  .grid-3,
+  .grid-2,
+  .card-grid,
+  .stat-band {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+  /* Problem section */
+
+  .problem-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 50px;
+  }
+
+  .problem-text h3 {
+    height: auto;
+    padding: 36px 24px;
+    border-radius: 18px;
+  }
+
+  .problem-heading {
+    margin-bottom: 24px;
+  }
+
+  /* CTA */
+
+  .cta {
+    padding: 36px 22px;
+    border-radius: 20px;
+  }
+
+  .cta p {
+    width: auto;
+  }
+
+  /* Footer */
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
